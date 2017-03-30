@@ -1,7 +1,7 @@
 {
   "name": "yaynab-vue-tables-2",
   "description": "[YAYNAB fork]Vue.js 2 grid components",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "keywords": [
     "vue2",
     "vuex",
