@@ -96,6 +96,8 @@ exports.install = function (Vue, globalOptions, useVuex, customTemplate) {
     },
     data: function data() {
       return _merge2.default.recursive(_data(), {
+        balance: {},
+        resp: {},
         source: 'server',
         loading: true,
         lastKeyStrokeAt: false,

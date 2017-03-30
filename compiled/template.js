@@ -18,18 +18,6 @@ module.exports = function (source) {
       'div',
       { 'class': "VueTables VueTables--" + this.source },
       [h(
-        'div',
-        { 'class': 'row' },
-        [h(
-          'div',
-          { 'class': 'col-md-6' },
-          [normalFilter]
-        ), h(
-          'div',
-          { 'class': 'col-md-6' },
-          [dropdownPagination, perPage]
-        )]
-      ), h(
         'table',
         { 'class': 'VueTables__table table ' + this.opts.skin },
         [h(
@@ -45,7 +33,7 @@ module.exports = function (source) {
           null,
           [noResults, rows]
         )]
-      ), pagination, dropdownPaginationCount]
+      )]
     );
   };
 };

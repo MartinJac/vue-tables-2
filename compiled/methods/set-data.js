@@ -3,6 +3,8 @@
 module.exports = function (data) {
   this.data = data.data;
   this.count = parseInt(data.count);
+  this.balance = data.balance;
+  this.resp = data.resp;
 
   setTimeout(function () {
     this.dispatch('loaded', data);
