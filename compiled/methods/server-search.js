@@ -39,9 +39,7 @@ function search(that, query) {
   if (that.vuex) {
     that.commit('SET_FILTER', query);
   } else {
-    that.initPagination();
-
-    if (that.opts.pagination.dropdown) that.getData();
+    that.getData();
   }
 }
 
